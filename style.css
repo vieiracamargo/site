@@ -1,0 +1,173 @@
+body{
+    position: relative;
+    width: 1920px;
+    height: 100%;
+
+    background: #FFFFFF;
+}
+
+header{
+    position: absolute;
+    width: 1920px;
+    height: 180px;
+    left: -24px;
+    top: -8px;
+    background-color: #FFFFFF;
+}
+
+.home{
+    position: absolute;
+    width: 1541px;
+    height: 107px;
+    left: 135px;
+    top: 12px;        
+}
+
+.home-logo{
+    position: absolute;
+    width: 1144px;
+    height: 45px;
+    left: 135px;
+    top: 12px;    
+
+}
+
+#logo{
+    position: absolute;
+    width: 140px;
+    height: 38px;
+    top: 4px;
+}
+
+#search-box{
+    position: absolute;
+    width: 954px;
+    height: 45px;
+    left: 190px;
+    border: 1px solid;
+}
+
+#lupa{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 10px;
+    top: 18px;
+}
+
+#search-input{
+    position: absolute;
+    width: 719px;
+    height: 30px;
+    left: 30px;
+    top: 8px;
+    border: none;
+}
+
+#search-button{  
+    position: absolute;
+    width: 160px;
+    height: 37px;
+    left: 790px;
+    top: 5px;
+    background: #F2632C;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#chat-box{
+    position: absolute;
+    left: 102%;
+    right: 21.93%;
+    top: 25px;
+    bottom: 99.44%;
+}
+
+#help-me{
+    position: absolute;
+    width: 178px;
+    height: 18px;
+    left: 1200px;
+    top: 26px;
+    text-decoration: none;
+
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#mobile{
+    position: absolute;
+    left: 117%;
+    right: 21.93%;
+    top: 25px;
+    bottom: 99.44%;
+}
+
+#phone-number{
+    position: absolute;
+    left: 119%;
+    right: 21.93%;
+    top: 26px;
+    bottom: 99.44%;
+}
+
+.menu{
+    position: absolute;
+    width: 1920px;
+    height: 134px;
+    left: 30px;
+    top: 87px;
+}
+
+.menu li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 70px 0 0 ;
+}
+
+.li-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: -30px;
+}
+
+.menu li:nth-child(8){
+    text-transform: none;
+    margin-left: 85px;
+
+}
+
+.menu li:nth-child(9){
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #184997;
+    border: 1px solid #BBBBBB;
+    padding: 15px 40px;
+    margin-left: -20px;     
+    box-sizing: border-box;
+
+}
+
+#container{ 
+    width: 1920px;
+    height: 927px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("imagens/backaground.png");
+}
