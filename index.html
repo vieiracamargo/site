@@ -6,41 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="home">
-            <div class="home-logo">
+            <div class="logo">
                 <img src="imagens/logo.png" alt="logo" id="logo">
-                <div id="search-box">
-                    <input type="search" name="search" id="search-input" placeholder="What type or location of business do you want to buy or sell?">
+            </div>
+            <div class="search-box">
+                <input type="search" name="search" id="search-input" placeholder="What type or location of business do you want to buy or sell?">
+                <button type="submit" class="search-button">
                     <img src="imagens/001-loupe.png" alt="lupa" id="lupa">
-                    <button type="submit" id="search-button">show results</button>
+                    show results</button>
+            </div>
+            <a href="#" id="help-me">
+                <div class="chat">
+                    <img src="imagens/conversation-chat-1.png" alt="" id="chat-box">
+                    <p>Can We Help You</p>
                 </div>
-                <img src="imagens/conversation-chat-1.png" alt="" id="chat-box">
-                <a href="#" id="help-me">Can We Help You</a>
+            </a>
+            <div class="phone">
                 <img src="imagens/mobile-phone-2.png" alt="" id="mobile">
-                <img src="imagens/phone.png" alt="" id="phone-number">
-                <nav class="menu">
-                    <ul>
-                        <li><img src="imagens/search-square.png" alt="" class="li-icon">business</li>
-                        <li><img src="imagens/invitation.png" alt="" class="li-icon"> advertising</li>
-                        <li><img src="imagens/Frame.png" alt="" class="li-icon">resources</li>
-                        <li><img src="imagens/pencil-write.png" alt="" class="li-icon"> blog</li>
-                        <li><img src="imagens/conversation-chat-text.png" alt="" class="li-icon"> discussions</li>
-                        <li><img src="imagens/events.png" alt="" class="li-icon"> events</li>
-                        <li><img src="imagens/aboutus.png" alt="" class="li-icon"> about us</li>
-                        <li><img src="imagens/login.png" alt="" class="li-icon">My BizBen</li>
-                        <li><img src="imagens/button 1.png" alt="" class="li-icon"> Create Listining</li>
-                    </ul>
-                </nav>
+                <p>(888)212-4747</p>
             </div>
         </div>
+        <nav class="menu">
+            <ul>
+                <li><img src="imagens/search-square.png" alt="" class="li-icon"><p>business</p></li>
+                <li><img src="imagens/invitation.png" alt="" class="li-icon"><p> advertising</p></li>
+                <li><img src="imagens/Frame.png" alt="" class="li-icon"><p>resources</p></li>
+                <li><img src="imagens/pencil-write.png" alt="" class="li-icon"><p> blog</p></li>
+                <li><img src="imagens/conversation-chat-text.png" alt="" class="li-icon"><p> discussions</p></li>
+                <li><img src="imagens/events.png" alt="" class="li-icon"><p> events</p></li>
+                <li><img src="imagens/aboutus.png" alt="" class="li-icon"><p> about us</p></li>
+                <li><img src="imagens/login.png" alt="" class="li-icon"><p>My BizBen</p></li>
+                <li><img src="imagens/button 1.png" alt="" class="li-icon"><p> Create Listining</p></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div id="container">
-           
+        <div class="container">
+            <div class="shadow"></div>
+            <div class="content">
+                <h1>
+                    List. Connect. <br> Get Deals Done.
+                </h1>
+                <h2>Want to buy or sell a business? BizBen is the only network you need.</h2>
+                <div class="search-box">
+                    <input type="search" name="search" id="search-input" placeholder="What type or location of business do you want to buy or sell?">
+                    <button type="submit" class="search-button">
+                        <img src="imagens/001-loupe.png" alt="lupa" id="lupa">
+                        show results</button>
+                </div>
+                <div class="options">
+                    <div class="child">
+                        <div class="elements">
+                            <img src="imagens/list.png" alt="lista" class="li-image">
+                            <span>Listings</span> 
+                        </div>
+                        <div class="elements">
+                            <img src="imagens/graphic.png" alt="">
+                            <ul>
+                                <li>Home Health Agency</li>
+                                <li>$250,000</li>
+                                <li class="price">Annual SDC: $350,000</li>
+                            </ul>
+                        </div>
+                        <div class="elements">
+                            <img src="imagens/graphic.png" alt="">
+                            <ul>
+                                <li>Dental Practice</li>
+                                <li>$120,000</li>
+                                <li class="price">Annual SDC: $190,000</li>
+                            </ul>
+                            <p>
+                                <a href="#" class="view-results">View All Results</a>
+                            </p>
+                        </div>
+                    <p class="bottom">postings</p>
+                    </div>
+                    <div class="child">
+                        <div class="elements">
+                            <img src="imagens/blog.png" alt="lista" class="li-image">
+                            <span>Blog</span> 
+                        </div>
+                        <div class="elements">
+                            <img src="imagens/graphic.png" alt="">
+                            <ul>
+                                <li>Buying a Food Truck Business</li>
+                                <li>Opportunity: 5 Things to</li>
+                                <li>Consider</li>
+                            </ul>
+                        </div>
+                        <div class="elements">
+                            <img src="imagens/graphic.png" alt="">
+                            <ul>
+                                <li>Who is Today's Laundry</li>
+                                <li>Investor or Buyer: Blue Collar</li>
+                                <li>or White Collar?</li>
+                            </ul>
+                            <p>
+                                <a href="#" class="view-results">View All Results</a>
+                            </p>
+                        </div>
+                        <p class="bottom">new & refresehd daily listings</p>
+                    </div>
+                    <div class="child">
+                        <div class="elements">
+                            <img src="imagens/conversation-chat-text.png" alt="lista" class="li-image">
+                            <span>Discussions</span> 
+                        </div>
+                        <div class="elements">
+                            <img src="imagens/graphic.png" alt="">
+                            <ul>
+                                <li>Cash Based Business: How</li>
+                                <li>Do I Confirm Cash Being</li>
+                                <li>Represented?</li>
+                            </ul>
+                        </div>
+                        <div class="elements">
+                            <img src="imagens/graphic.png" alt="">
+                            <ul>
+                                <li>Should A Buyer Be Allowed To</li>
+                                <li>Operate A Business Before</li>
+                                <li>Escrow Closes?</li>
+                            </ul>
+                            <p>
+                                <a href="#" class="view-results">View All Results</a>
+                            </p>
+                        </div>
+                        <p class="bottom">resources</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info-top">
+                        <p class="title">welcome to the bizben network</p>
+                        <h3>Education, Community, Expert Advice.</h3>
+                        <p>Trusted for 25+ years, BizBen is the only comprehensive nationwide
+                        business listing network designed  <br>
+                        <strong>to educate, support, and connect buyers,
+                        sellers, brokers, and advisors</strong>. With custom solutions to <br>
+                        fit your needs, resources that cater to all experience levels, and access to a team of deep domain <br> - 
+                        our powerful network gives you everything you need to get deals done.</p>
+                    </div>
+                    <div class="info-bottom">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

@@ -1,173 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
 body{
-    position: relative;
-    width: 1920px;
-    height: 100%;
-
-    background: #FFFFFF;
+    font-family: 'Martel Sans', sans-serif;
 }
 
-header{
-    position: absolute;
-    width: 1920px;
-    height: 180px;
-    left: -24px;
-    top: -8px;
-    background-color: #FFFFFF;
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 5px auto;
 }
 
-.home{
-    position: absolute;
-    width: 1541px;
-    height: 107px;
-    left: 135px;
-    top: 12px;        
+.home {
+    display: flex;
+    justify-content: space-between;
 }
 
-.home-logo{
-    position: absolute;
-    width: 1144px;
-    height: 45px;
-    left: 135px;
-    top: 12px;    
-
-}
-
-#logo{
-    position: absolute;
+.home .logo{
     width: 140px;
-    height: 38px;
-    top: 4px;
 }
 
-#search-box{
-    position: absolute;
-    width: 954px;
-    height: 45px;
-    left: 190px;
-    border: 1px solid;
+.home .search-box {
+    width: calc(100% - 440px);
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 3px;
 }
 
-#lupa{
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    left: 10px;
-    top: 18px;
+.home .search .lupa{
+    width: 10px;
+    height: 10px;
+    background-color: #F2632C;
 }
 
-#search-input{
-    position: absolute;
-    width: 719px;
-    height: 30px;
-    left: 30px;
-    top: 8px;
-    border: none;
-}
-
-#search-button{  
-    position: absolute;
-    width: 160px;
-    height: 37px;
-    left: 790px;
-    top: 5px;
+.home .search-box button {
+    padding: 0;
+    margin: 2px;
+    border: 0;
     background: #F2632C;
     border-radius: 3px;
-    border: none;
-    font-family: 'Cerebri Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 14px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    color: #fff;
+    padding: 5px 15px;
+    white-space: nowrap;
 }
 
-#chat-box{
-    position: absolute;
-    left: 102%;
-    right: 21.93%;
-    top: 25px;
-    bottom: 99.44%;
+.home .search-box input{
+    border: 0;
+    width: 100%;
+}
+
+.home .search-box input:focus{
+    outline: none;
 }
 
 #help-me{
-    position: absolute;
-    width: 178px;
-    height: 18px;
-    left: 1200px;
-    top: 26px;
     text-decoration: none;
-
-    font-family: 'Cerebri Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
 }
 
-#mobile{
-    position: absolute;
-    left: 117%;
-    right: 21.93%;
-    top: 25px;
-    bottom: 99.44%;
+.home .chat {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-#phone-number{
-    position: absolute;
-    left: 119%;
-    right: 21.93%;
-    top: 26px;
-    bottom: 99.44%;
+.home .chat p {
+    margin-left: 5px;
 }
 
-.menu{
-    position: absolute;
-    width: 1920px;
-    height: 134px;
-    left: 30px;
-    top: 87px;
+.home .phone {
+    display: flex;
+    align-items: center;
 }
 
-.menu li{
-    display: inline-block;
+.home .phone p {
+    margin-left: 5px;
+}
+
+.menu {
+    margin: 20px;
     text-transform: uppercase;
-    margin: 0 70px 0 0 ;
 }
 
-.li-icon{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    margin-left: -30px;
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
-.menu li:nth-child(8){
-    text-transform: none;
-    margin-left: 85px;
-
-}
-
-.menu li:nth-child(9){
-    font-family: 'Cerebri Sans';
+.menu ul li {
+    display: flex;
+    align-items: center;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 17px;
-    text-transform: uppercase;
-    color: #184997;
-    border: 1px solid #BBBBBB;
-    padding: 15px 40px;
-    margin-left: -20px;     
-    box-sizing: border-box;
+}
+
+.menu ul li:last-child{
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    padding: 15px 10px;
+    color:#184997;
 
 }
 
-#container{ 
-    width: 1920px;
-    height: 927px;
-    background-position: center;
+.menu ul p {
+    margin-left: 5px;
+}
+
+main .container {
+    background: url('imagens/backaground.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("imagens/backaground.png");
+    height: 972px;
+    position: relative;
+}
+
+main .container .shadow{
+    background: rgba(0,0,0,50%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .container .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 70vw;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 50px;
+    margin: 300px 200px 0 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 76px;
+    text-align: center;
+    
+}
+
+main .container .content h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 200px;
+}
+
+main .container .search-box {
+    width: calc(100% - 500px);
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 140px;
+    height: 95px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+main .container .lupa{
+    width: 10px;
+    height: 10px;
+    background-color: #F2632C;
+}
+
+main .search-box button {
+    width: 213px;
+    height: 55px;
+    margin: 2px;
+    border: 0;
+    background: #F2632C;
+    border-radius: 3px;
+    color: #fff;
+    margin: auto 20px;
+}
+
+main .search-box input{
+    border: 0;
+    width: 100%;
+}
+
+main .search-box input:focus{
+    outline: none;
+}
+
+main .options{
+    display: flex;
+    margin: 10px 140px;
+}
+
+main .options .child{
+    width: 300px;
+    height: 285px;
+    background-color: #fff;
+    border: solid 1px black;
+    color: black;
+    box-sizing: border-box;
+}
+
+main .options .child .elements{
+    margin: 20px;
+    text-align: left;
+    font-size: 13px;
+}
+
+main .options .child .elements .price{
+    color: #696969;
+}
+
+main .options .li-image{
+    margin: 0 15px 0 10px;
+    width: 37.0px;
+    height: 37.0px;
+}
+
+main .options ul{
+    display: inline-block;
+    margin: 0 10px;
+    color: #0D263B;
+}
+
+main p {
+    font-size: 13px;
+    line-height: 38px;
+    text-align: center;
+}
+
+main p a:visited{
+    color: #184997;
+}
+
+.bottom{
+    margin: 40px 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.info{
+    height: 700px;
+    position: absolute;
+    top: 1900px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.info-top{
+    padding: 0 200px;
+    margin: 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 21px ;
+    color: #696969;
+}
+
+.title{
+    line-height: 19px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    color: #0D263B;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 53px;
+    text-align: center
+}
+
+.info-bottom{
+    margin: 10px auto;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 21px ;
+    color: #696969;
+    width: 100%;
+    height: 50%;
 }
